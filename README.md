@@ -14,4 +14,4 @@ Then activate it with the following command.
 conda activate ./venv
 ```
 
-If you are using CUDA instead of Apple's Metal, modify all occurences of `torch.mps.is_available` to `torch.cuda.is_available`.
+If you are using CUDA instead of Apple's Metal, modify all occurences of `torch.mps.is_available` and `torch.device("mps")` to `torch.cuda.is_available` and `torch.device("cuda")`, respectively.
